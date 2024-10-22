@@ -1,0 +1,50 @@
+:root {
+  --background-color: #dfdfdf;
+  --app-color: #ffffff;
+  --link-color: #ff2f2f;
+}
+
+body {
+  font-family: sans-serif, serif;
+  background-color: var(--background-color);
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: ;
+}
+
+section .app {
+  border: #ffffff 5px solid;
+  background-color: var(--app-color);
+  margin: 15px;
+  border-radius: 3px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--app-color);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  width: 50px;
+  height: 30px;
+  margin: 0 0 0 125px;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
