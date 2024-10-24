@@ -12,7 +12,6 @@ body {
 .app-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: ;
 }
 
 section .app {
@@ -40,6 +39,34 @@ img {
   margin: 0 0 0 125px;
 }
 
+#four {
+  margin: 0 0 0 180px;
+}
+
+#six {
+  margin: 0 0 0 150px;
+}
+
+#seven {
+  margin: 0 0 0 110px;
+}
+
+#eight {
+  margin: 0 0 0 160px;
+}
+
+#nine {
+  margin: 0 0 0 160px;
+}
+
+#ten {
+  margin: 0 0 0 170px;
+}
+
+#twelve {
+  margin: 0 0 0 150px;
+}
+
 h3 {
   margin: 0;
 }
@@ -47,4 +74,23 @@ h3 {
 a {
   text-decoration: none;
   color: var(--link-color);
+}
+
+@media (max-width: 1223px) {
+  .app-container {
+    grid-template-columns: repeat(3, 300px);
+  }
+}
+
+@media (max-width: 610px) {
+  .app-container {
+    grid-template-columns: repeat(2, 315px);
+  }
+}
+
+@media (max-width: 512px) {
+  .app-container {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(12, 150px);
+  }
 }
