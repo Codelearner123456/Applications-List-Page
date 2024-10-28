@@ -1,96 +1,70 @@
-:root {
-  --background-color: #dfdfdf;
-  --app-color: #ffffff;
-  --link-color: #ff2f2f;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 body {
-  font-family: sans-serif, serif;
-  background-color: var(--background-color);
-  margin: 30px;
-}
-
-.app-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-section .app {
-  border: #ffffff 5px solid;
-  background-color: var(--app-color);
-  margin: 15px;
-  border-radius: 3px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--app-color);
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-img {
-  width: 50px;
-  height: 30px;
-  margin: 0 0 0 125px;
-}
-
-#four {
-  margin: 0 0 0 180px;
-}
-
-#six {
-  margin: 0 0 0 150px;
-}
-
-#seven {
-  margin: 0 0 0 110px;
-}
-
-#eight {
-  margin: 0 0 0 160px;
-}
-
-#nine {
-  margin: 0 0 0 160px;
-}
-
-#ten {
-  margin: 0 0 0 170px;
-}
-
-#twelve {
-  margin: 0 0 0 150px;
+  background-color: #efefef;
+  padding: 40px;
+  font-size: 20px;
 }
 
 h3 {
-  margin: 0;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
-a {
-  text-decoration: none;
-  color: var(--link-color);
-}
-
-@media (max-width: 1223px) {
-  .app-container {
-    grid-template-columns: repeat(3, 300px);
-  }
+p {
+  font-size: 15px;
 }
 
-@media (max-width: 610px) {
-  .app-container {
-    grid-template-columns: repeat(2, 315px);
-  }
+.card {
+  border: white 2px solid;
+  border-radius: 3px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
 }
 
-@media (max-width: 512px) {
-  .app-container {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(12, 150px);
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+img {
+  height: 30px;
+  margin-left: 70px;
+  border-radius: 5%;
+  width: 40px;
+  background-color: white;
+}
+
+.x-long {
+  margin-left: 50px;
+}
+
+.long {
+  margin-left: 10px;
+}
+
+.short {
+  margin-left: 50px;
+}
+
+.x-short {
+  margin-left: 90px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 850px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
